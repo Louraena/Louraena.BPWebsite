@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackpink</title>
+    <link rel="stylesheet" href="CSS/blackpink.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="bp.js"></script>
+</head>
+
+<style> 
+ 
+ body { 
+    width: 100%; 
+    height: 100vh; 
+    background-color: black;  
+ }
+     
+    .slide-container { 
+        width: 100%; 
+        height:85vh; 
+        display: block; 
+        align-items: center; 
+        overflow: hidden; 
+        background-color: transparent; 
+    } 
+     
+    .image-slider { 
+        width: 100%; 
+        height: 600px; 
+        position: absolute; 
+        left: 0; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        transition: 1s; 
+    } 
+     
+    .slides-div { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        margin: 0 30px; 
+    } 
+     
+    .img { 
+        position: relative; 
+        width: 140px; 
+        height: 250px; 
+        transition: 0.5s; 
+    } 
+     
+    .button { 
+        position: absolute; 
+        width: 143px; 
+        height: 250px; 
+        transition: 0.5s; 
+        background-color: transparent; 
+    } 
+     
+    #slider-span1:target ~ 
+    .image-slider #img1, 
+    #slider-span1:target ~
+    .image-slider #button-1 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    } 
+     
+    #slider-span2:target ~ 
+    .image-slider #img2, 
+    #slider-span2:target ~
+    .image-slider #button-2 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    } 
+     
+    #slider-span3:target ~ 
+    .image-slider #img3, 
+    #slider-span3:target ~
+    .image-slider #button-3 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    } 
+         
+    #slider-span4:target ~ 
+    .image-slider #img4, 
+    #slider-span4:target ~
+    .image-slider #button-4 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    }
+         
+    #slider-span5:target ~ 
+    .image-slider #img5, 
+    #slider-span5:target ~
+    .image-slider #button-5 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    } 
+         
+    #slider-span6:target ~ 
+    .image-slider #img6, 
+    #slider-span6:target ~
+    .image-slider #button-6 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    }
+         
+    #slider-span7:target ~ 
+    .image-slider #img7, 
+    #slider-span7:target ~
+    .image-slider #button-7 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    }
+         
+    #slider-span8:target ~ 
+    .image-slider #img8, 
+    #slider-span8:target ~
+    .image-slider #button-8 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    }
+         
+    #slider-span9:target ~ 
+    .image-slider #img9, 
+    #slider-span9:target ~
+    .image-slider #button-9 { 
+        width:280px; 
+        height: 285px; 
+        background-color: transparent; 
+    }
+
+    #slider-span1:target ~ .image-slider { left:25%; } 
+    #slider-span2:target ~ .image-slider { left:20%; } 
+    #slider-span3:target ~ .image-slider { left:15%; } 
+    #slider-span4:target ~ .image-slider { left:10%; } 
+    #slider-span5:target ~ .image-slider { left:0%; }     
+    #slider-span6:target ~ .image-slider { left:-10%; } 
+    #slider-span7:target ~ .image-slider { left:-15%; } 
+    #slider-span8:target ~ .image-slider { left:-20%; } 
+    #slider-span9:target ~ .image-slider { left:-25%; } 
+
+</style>
+<body>
+        <div class="navbar">
+            <a href="Blink.html">Blinks</a>
+            <a href="Updates.html">Updates</a>
+            <a href="News.html">News</a>
+            <a href="Album.html">Album</a>
+            <a href="Videos.html">Videos</a>
+            <a href="Pictures.html" class="active">Pictures</a>
+            <a href="Members.html">Members</a>
+            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+        </div>
+    <section>     
+     
+            <div class="slide-container"> 
+
+               
+    
+                <span class="slider-span" id="slider-span1"></span> 
+                <span class="slider-span" id="slider-span2"></span> 
+                <span class="slider-span" id="slider-span3"></span> 
+                <span class="slider-span" id="slider-span4"></span> 
+                <span class="slider-span" id="slider-span5"></span> 
+                <span class="slider-span" id="slider-span6"></span> 
+                <span class="slider-span" id="slider-span7"></span>
+                <span class="slider-span" id="slider-span8"></span> 
+                <span class="slider-span" id="slider-span9"></span>  
+                    
+                <div class="image-slider">
+        
+                    <div class="slides-div" id="slide-1"> 
+                            <img src="Image/Blackpink1.jpg" class="img" id="img1"> 
+                            <a href="#slider-span1" class="button" id="button-1"></a> 
+                    </div>
+                    
+                    <div class="slides-div" id="slide-2"> 
+                            <img src="Image/Blackpink2.jpg" alt="" class="img" id="img2">
+                            <a href="#slider-span2" class="button" id="button-2"></a> 
+                    </div> 
+                    
+                    <div class="slides-div" id="slide-3">
+                            <img src="Image/Blackpink3.jpg" alt="" class="img" id="img3"> 
+                            <a href="#slider-span3" class="button" id="button-3"></a>
+                    </div>
+                    
+                    <div class="slides-div" id="slide-4">
+                        <img src="Image/Blackpink4.jpg" alt="" class="img" id="img4"> 
+                        <a href="#slider-span4" class="button" id="button-4"></a>
+                    </div>
+                    
+                    <div class="slides-div" id="slide-5">
+                        <img src="Image/Blackpink10.jpg" alt="" class="img" id="img5"> 
+                        <a href="#slider-span5" class="button" id="button-5"></a>
+                    </div>
+                    
+                    <div class="slides-div" id="slide-6">
+                        <img src="Image/Blackpink6.jpg" alt="" class="img" id="img6"> 
+                        <a href="#slider-span6" class="button" id="button-6"></a>
+                    </div>
+                    
+                    <div class="slides-div" id="slide-7">
+                        <img src="Image/Blackpink7.jpg" alt="" class="img" id="img7"> 
+                        <a href="#slider-span7" class="button" id="button-7"></a>
+                    </div>
+                    
+                    <div class="slides-div" id="slide-8">
+                        <img src="Image/Blackpink8.jpg" alt="" class="img" id="img8"> 
+                        <a href="#slider-span8" class="button" id="button-8"></a>
+                    </div> 
+                    
+                    <div class="slides-div" id="slide-9">
+                        <img src="Image/Blackpink9.jpg" alt="" class="img" id="img9"> 
+                        <a href="#slider-span9" class="button" id="button-9"></a>
+                    </div>
+            
+                </div>
+            </div> 
+     
+    </section>
+
+ 
+</body>
+</html>
+
+    
